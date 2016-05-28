@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+.container {
+    width: 100%;
+}
+.block {
+    padding: 10px;
+    border-top: 1px solid rgba(173, 173, 173, 0.3);
+}
+.button {
+    white-space: nowrap;
+    padding: 5px;
+    line-height: 24px;
+    background: #0f8383;
+    border-radius: 5px;
+    color: white;
+}
+.button:hover {
+    background: #0E6F6F;
+}
+.button:active {
+    box-shadow: inset 0px 0px 6px #2C2C2C;
+}
+.no-select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.container .goods-container {
+    width: 440px;
+    box-shadow: 0px 0px 5px rgb(173, 173, 173);
+    margin: 0 auto;
+
+}
+.container .goods-container .goods-list-viewport {
+    height: 300px;
+    padding: 5px;
+    overflow-y: auto;
+}
+.container .goods-container .goods-list .list-item {
+    overflow: hidden;
+    background-color: rgb(236, 236, 236);
+    outline: none !important;
+    border-bottom: 2px solid white;
+}
+.container .goods-container .goods-list .list-item:hover {
+    background-color: rgb(244, 244, 244);
+}
+.check-box {
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    box-shadow: inset 0 0 3px rgb(65, 65, 65);
+    border-radius: 50%;
+    float: left;
+    margin: 5px;
+}
+.container .goods-container .goods-list .list-item .label {
+    display: inline-block;
+    width: 340px;
+    margin-left: 10px;
+    height: 24px;
+    line-height: 24px;
+    float: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    outline: none !important;
+}
+.container .goods-container .goods-list .list-item .label > div {
+    display: inline;
+}
+.container .goods-container .goods-list .list-item .label[contenteditable] {
+    white-space: nowrap;
+    overflow: hidden;
+    color: gray;
+}
+
+.checked .check-box {
+    background-color: #2EFF00;
+}
+.container .goods-container .goods-list .list-item.checked .label {
+    color: rgba(0,0,0, 0.5);
+    text-decoration: line-through;
+}
+.container .goods-container .goods-list .list-item .remove-button {
+    width: 14px;
+    height: 14px;
+    font-size: 18px;
+    color: #801600;
+    transform: rotateZ(45deg);
+    -webkit-transform: rotateZ(45deg);
+    -moz-transform: rotateZ(45deg);
+    -o-transform: rotateZ(45deg);
+    opacity: 0;
+    float: right;
+    margin: 5px;
+    transition:         opacity .25s;
+    -webkit-transition: opacity .25s;
+    -moz-transition:    opacity .25s;
+    -o-transition:      opacity .25s;
+}
+.cursor-pointer:hover {
+    cursor: pointer;
+}
+.container .goods-container .goods-list .list-item:hover .remove-button {
+    opacity: 1;
+}
+.container .goods-container .new-item-controls .input-new-item-name {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 250px;
+    height: 24px;
+    line-height: 24px;
+}
+.container .goods-container .list-actions-buttons .set-all-checked {
+    margin-right: 15px;
+}
+
